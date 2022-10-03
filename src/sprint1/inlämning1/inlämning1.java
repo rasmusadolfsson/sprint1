@@ -39,6 +39,7 @@ public class inlämning1 {
         }
     }
     public static void main(String[] args){
+
         inlämning1 m = new inlämning1();
     }
 }
