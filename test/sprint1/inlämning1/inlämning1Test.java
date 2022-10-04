@@ -32,8 +32,8 @@ class inlämning1Test {
     }
     @Test
     public final void waterAmountTest(){
-        assert(v1.HowMuchWater() == 0.02 && Objects.equals(v1.getWater().water, "mineralvatten"));
-        assert(v2.HowMuchWater() == 6 && Objects.equals(v2.getWater().water, "kranvatten"));
-        assert(v3.HowMuchWater() == 0.22 && Objects.equals(v3.getWater().water, "proteindryck"));
+        assert(v1.HowMuchWater() == 0.02);
+        assert(v2.HowMuchWater() == 6);
+        assert(v3.HowMuchWater() == 0.22);
     }
 }
