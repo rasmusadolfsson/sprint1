@@ -10,8 +10,5 @@ public class Palm extends Växt { //ännu mer arv
     public double HowMuchWater() {
         return 0.5 * getLength();
     }  //polymorfism
-//    @Override
-//    public String Watertype() {
-//        return "kranvatten";
-//    }
+
 }

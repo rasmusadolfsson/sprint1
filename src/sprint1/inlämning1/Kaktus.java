@@ -8,9 +8,5 @@ public class Kaktus extends Växt { //arv
     @Override
     public double HowMuchWater() {
         return 0.02;
-    }
-//    @Override
-//    public String Watertype() {
-//        return "mineralvatten";
-//    }
+    } //polymorfism
 }

@@ -8,9 +8,6 @@ public class Köttätande extends Växt { // mer arv
     @Override
     public double HowMuchWater() {
         return 0.1 + 0.2 * getLength();
-    }
-//    @Override
-//    public String Watertype() {
-//        return "proteindryck";
-//    }
+    } //polymorfism
+
 }

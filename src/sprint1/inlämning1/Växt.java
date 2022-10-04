@@ -3,7 +3,6 @@ package sprint1.inlämning1;
 public abstract class Växt implements Vatten {
     private String name;  // inkapsling
     private double length;
-
     public WaterType water;
 
     Växt(String name, double length, WaterType water){
@@ -11,7 +10,6 @@ public abstract class Växt implements Vatten {
         this.length = length;
         this.water = water;
     }
-
     public void setLength(double length){
         this.length = length;
     }
@@ -30,7 +28,4 @@ public abstract class Växt implements Vatten {
     public WaterType getWater() {
         return water;
     }
-
-    //public abstract double HowMuchWater();
-    //public abstract String Watertype();
 }

@@ -21,11 +21,11 @@ public class inlämning1 {
 
         boolean found = false;
         while(!found) {
-            String input = JOptionPane.showInputDialog("Ange namnet på växt: ");
+            String input = JOptionPane.showInputDialog("Vilken växt ska få vätska? ");
 
             for (Växt v: växter) {
                 if (Objects.equals(input, v.getName())) {
-                    JOptionPane.showMessageDialog(null, "Växten: " + v.getName() + " behöver " + v.HowMuchWater() + " liter " + v.getWater().water + " per dag!");
+                    JOptionPane.showMessageDialog(null, "Växten " + v.getName() + " behöver " + v.HowMuchWater() + " liter " + v.getWater().water + " per dag!");
                     found = true;
                     break;
                 }
