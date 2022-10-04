@@ -9,10 +9,10 @@ public class inlämning1 {
 
     inlämning1(){
         List<Växt> växter = new ArrayList<>();
-        Växt Igge = new Kaktus("Igge", 0.2);
-        Växt Laura = new Palm("Laura", 5);
-        Växt Meatloaf = new Köttätande("Meatloaf", 0.7);
-        Växt Putte = new Palm("Putte", 1);
+        Växt Igge = new Kaktus("Igge", 0.2, WaterType.MINERALVATTEN);
+        Växt Laura = new Palm("Laura", 5, WaterType.KRANVATTEN);
+        Växt Meatloaf = new Köttätande("Meatloaf", 0.7, WaterType.PROTEINDRYCK);
+        Växt Putte = new Palm("Putte", 1, WaterType.KRANVATTEN);
 
         växter.add(Igge);
         växter.add(Laura);
@@ -25,7 +25,7 @@ public class inlämning1 {
 
             for (Växt v: växter) {
                 if (Objects.equals(input, v.getName())) {
-                    JOptionPane.showMessageDialog(null, "Växten: " + v.getName() + " behöver " + v.HowMuchWater() + " liter " + v.Watertype() + " per dag!");
+                    JOptionPane.showMessageDialog(null, "Växten: " + v.getName() + " behöver " + v.HowMuchWater() + " liter " + v.getWater().water + " per dag!");
                     found = true;
                     break;
                 }
@@ -39,7 +39,6 @@ public class inlämning1 {
         }
     }
     public static void main(String[] args){
-
         inlämning1 m = new inlämning1();
     }
 }

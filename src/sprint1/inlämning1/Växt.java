@@ -4,9 +4,12 @@ public abstract class Växt implements Vatten {
     private String name;  // inkapsling
     private double length;
 
-    Växt(String name, double length){
+    public WaterType water;
+
+    Växt(String name, double length, WaterType water){
         this.name = name;
         this.length = length;
+        this.water = water;
     }
 
     public void setLength(double length){
@@ -24,6 +27,10 @@ public abstract class Växt implements Vatten {
         this.name = name;
     }
 
+    public WaterType getWater() {
+        return water;
+    }
+
     //public abstract double HowMuchWater();
-    public abstract String Watertype();
+    //public abstract String Watertype();
 }
